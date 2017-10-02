@@ -1,0 +1,38 @@
+.about-container{
+	height: 1000px;
+	box-sizing: border-box;
+}
+
+.about-container .about-container-left{
+	background-color: #F8F8F8;
+	height: 100%;
+}
+.about-container .about-container-left .tittle{
+	color:#224592;
+	border-bottom: 1px solid #000000;
+	padding: 20px;
+}
+.about-container .about-container-left .tittle h3{
+	font-size: 28px;
+}
+.about-container .about-container-left ul{
+	padding: 20px;
+}
+.about-container .about-container-left ul li{
+	border-left: 2px solid #224592;
+	margin-bottom: 10px;
+	padding-left: 20px;
+	height: 15px;
+	line-height: 15px;
+}
+.about-container .about-container-left .contact{
+	background-color: #EAEAEA;
+	padding: 20px;
+	margin-top: 500px;
+}
+.about-container-right img{
+	width: 100%;
+}
+.active{
+	color: #224592;
+}
