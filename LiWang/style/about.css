@@ -1,38 +1,95 @@
 .about-container{
 	height: 1000px;
 	box-sizing: border-box;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 45px;
 }
-
+.activeA{
+	color: #224592 !important;
+}
 .about-container .about-container-left{
 	background-color: #F8F8F8;
 	height: 100%;
 }
 .about-container .about-container-left .tittle{
 	color:#224592;
-	border-bottom: 1px solid #000000;
+	border-bottom: 1px solid #DCDCDC;
 	padding: 20px;
 }
 .about-container .about-container-left .tittle h3{
-	font-size: 28px;
+	font-size: 18px;
 }
 .about-container .about-container-left ul{
 	padding: 20px;
 }
 .about-container .about-container-left ul li{
 	border-left: 2px solid #224592;
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 	padding-left: 20px;
 	height: 15px;
 	line-height: 15px;
+    color: #666666;
+}
+.about-container .about-container-left ul li a{
+    color: #666;
 }
 .about-container .about-container-left .contact{
 	background-color: #EAEAEA;
 	padding: 20px;
-	margin-top: 500px;
+	margin-top: 405px;
+    color: #224592
+}
+.about-container .about-container-left .contact p:nth-child(2){
+    line-height: 30px
 }
 .about-container-right img{
 	width: 100%;
 }
-.active{
-	color: #224592;
+.about-container-right > .tittle{
+	height: 60px;
+	border-bottom: 1px solid #224592;
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.about-container-right > .tittle>p{
+    height: 60px;
+    line-height: 60px;
+    margin-top: -12px;
+}
+.about-container-right > .tittle>p.left{
+    font-size: 30px;
+    color: #224592;
+}
+.about-container-right > .tittle>p.right{
+    color: #333333;
+}
+.about-container-right .container{
+    width: 100%;
+    color: #666666
+}
+.about-container-right .container header{
+    border-left: 2px solid #224592;
+    margin-top: 30px;
+    padding-left: 20px;
+    height: 15px;
+    line-height: 15px;
+}
+.about-container-right .container p{
+    width: 100%;
+    text-indent:25px;
+    font-size: 14px;
+    line-height: 28px;
+}
+.connection{
+    display: inline-block;
+    width: 65%;
+    padding: 0 10%;
+    height: 26px;
+    background-color: #224592;
+    color: #fff;
+    line-height:26px;
+    text-align: center;
 }

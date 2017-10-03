@@ -5,10 +5,270 @@
     <title>丽王网站</title>
     <link rel="stylesheet" href="./public/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style/Reset.css">
+    <link rel="stylesheet" href="./style/home.css">
     <script src="./public/jquery/dist/jquery.min.js"></script>
+    <script src="./public/bootstrap/dist/js/bootstrap.js"></script>
+    <!--[if IE]>
+    <script src="http://libs.baidu.com/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
+    <script src="./project/home.js"></script>
     <script src="./project/footer.js"></script>
+
 </head>
 <body>
+<div class="container-body">
+    <!--轮播-->
+    <div id="circleContent" class="carousel slide">
+        <ol class="carousel-indicators">
+            <li data-target="#circleContent" data-slide-to="0" class="active"></li>
+            <li data-target="#circleContent" data-slide-to="1"></li>
+            <li data-target="#circleContent" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="./images/KV/1.jpg">
+                <!--<div class="carousel-caption">IMG1</div>-->
+            </div>
+            <div class="item">
+                <img src="./images/KV/1.jpg">
+                <!--<div class="carousel-caption">IMG2</div>-->
+            </div>
+            <div class="item">
+                <img src="./images/KV/1.jpg">
+                <!--<div class="carousel-caption">IMG3</div>-->
+            </div>
+        </div>
+        <a class="carousel-control left glyphicon glyphicon-menu-left unShow" href="#circleContent"
+           data-slide="prev"></a>
+        <a class="carousel-control right glyphicon glyphicon-menu-right unShow" href="#circleContent"
+           data-slide="next"></a>
+        <div class="KV col-xs-12 col-lg-12 col-md-12 col-sm-12">
+            <img src="./images/KV/KV_BG.png" alt="图片加载失败">
+        </div>
+    </div>
+    <!--内容-->
+    <nav class="navbar navbar-default" role="navigation">
+        <section class="container">
+            <div class="row">
+                <!--导航-->
+                <div class="container-fluid col-sm-12">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle NavBtn" data-toggle="collapse"
+                                data-target="#example-navbar-collapse">
+                            <!--<span class="sr-only">切换导航</span>-->
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Login图标</a>
+                        <a href="javascript:;" class="navbar-brand-img navbar-toggle">En</a>
+                        <a href="javascript:;" class="navbar-brand-img navbar-toggle MobileSearch"><img
+                                src="./images/icon_research.png"
+                                alt="图片加载失败"></a>
+                    </div>
+                    <div class="search"><input type="text" placeholder="请输入产品型号"><img
+                            src="./images/icon_research.png" alt="图片加载失败"><i>En</i></div>
+                    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                        <ul class="nav navbar-nav navClick">
+                            <li class="activeH"><a href="#">首页</a></li>
+                            <li><a href="#">产品中心</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    关于丽王 <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">jmeter</a></li>
+                                    <li><a href="#">EJB</a></li>
+                                    <li><a href="#">Jasper Report</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">分离的链接</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">另一个分离的链接</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">丽王实例</a></li>
+                            <li><a href="#">企业动态</a></li>
+                            <li><a href="#">联系我们</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="pull-down">
+            <div class="close-search"><span></span><span></span></div>
+            <div class="startSearch"><img src="./images/icon_research.png" alt="图片加载失败"><input type="text" placeholder="输入产品型号">
+                <p>点击进行搜索</p>
+            </div>
+        </div>
+    </nav>
+    <!--第二部分内容-->
+    <section class="dreamsColor">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-4 col-md-offset-4 col-sm-offset-4 col-xs-offset-4  dreamSlogan">
+                    <img src="./images/slogan.jpg" alt="图片加载失败">
+                </div>
+            </div>
+            <div class="row">
+                <div class=" col-sm-offst-2 col-xs-8 col-xs-offset-2 col-sm-8 HomeProduct">
+                    <div class="row">
+                        <div class=" col-sm-2 col-xs-2  col-sm-offset-5 col-md-2 col-md-offset-1 col-xs-offset-5">
+                            <img src="./images/title_products.png" alt="图片加载失败"></div>
+                        <div class=" col-sm-2 col-xs-2 col-sm-offset-1 col-md-2 col-md-offset-1  col-xs-offset-2 Pro_one">
+                            <img src="./images/btn_-FluorescentPigments.png" alt="图片加载失败"></div>
+                        <div class=" col-sm-2 col-xs-2 col-sm-offset-2 col-md-2 col-md-offset-1 col-xs-offset-1 Pro_one">
+                            <img src="./images/btn_ColorPaste.png" alt="图片加载失败"></div>
+                        <div class=" col-sm-2  col-xs-2  col-sm-offset-2 col-md-2 col-md-offset-1 col-xs-offset-1 Pro_one">
+                            <img src="./images/btn_OrganicPigments.png" alt="图片加载失败"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-4 col-md-offset-4 col-sm-offset-4 col-xs-offset-4 dreamSlogan">
+                        <img src="./images/title_reason.png" alt="图片加载失败">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="reason">
+                        <div class="col-sm-4 col-md-3 col-xs-8 col-sm-offset-1 col-lg-3 col-md-offset-0 col-xs-offset-2 advantage">
+                            <div><img src="./images/icon_20years.png" alt="图片加载失败"></div>
+                            <h3>20年的努力</h3>
+                            <p>丽王科技股份经过近20年的不懈努力，现成为国内最大的有机颜料及水性色浆生产供应商之一。</p>
+                        </div>
+                        <div class="col-sm-4 col-xs-8 col-md-3 col-sm-offset-2 col-lg-3 col-md-offset-0 col-xs-offset-2 advantage">
+                            <div><img src="./images/icon_honor.png" alt="图片加载失败"></div>
+                            <h3>全国认证荣誉</h3>
+                            <p>通过了ISO9001：2008认证、ISO14001：2004认证及INTERTEK绿色认证，荣获“全国家纺面料印染色浆示范中心”，“中国著名品牌”等荣誉称号。</p>
+                        </div>
+                        <div class="col-sm-4 col-xs-8 col-md-3 col-sm-offset-1 col-lg-3 col-md-offset-0 col-xs-offset-2 advantage">
+                            <div><img src="./images/icon_innovate.png" alt="图片加载失败"></div>
+                            <h3>注重科技创新</h3>
+                            <p>公司注重科技创新，现已形成红、黄、蓝、绿、橙、荧光系列有机颜料、环保系列有机颜料、水性色浆、印染助剂等产品。</p>
+                        </div>
+                        <div class="col-sm-4 col-xs-8 col-md-3 col-sm-offset-2 col-lg-3 col-md-offset-0 col-xs-offset-2 advantage">
+                            <div><img src="./images/icon_technology.png" alt="图片加载失败"></div>
+                            <h3>引进先进工艺</h3>
+                            <p>江苏丽王科技有限公司注重科技创新，积极引进国外先进工艺，重点开发生产喹丫啶酮、DPP、偶氮缩合、邶系类的高档产品，引进国际一流的工装设备。</p>
+                        </div>
+                        <div class="col-sm-4 col-xs-8 col-md-3 col-sm-offset-1 col-lg-3 col-md-offset-0 col-xs-offset-2 advantage">
+                            <div><img src="./images/icon_economics.png" alt="图片加载失败"></div>
+                            <h3>注重环保经济</h3>
+                            <p>采用国际最先进的微生物修复法处理污水，使污水的各项指标稳定控制在国家一级排放标准之内，确保企业长期可持续发展。</p>
+                        </div>
+                        <div class="col-sm-4 col-xs-8 col-md-3 col-sm-offset-2 col-lg-3  col-md-offset-0 col-xs-offset-2 advantage">
+                            <div><img src="./images/icon_company.png" alt="图片加载失败"></div>
+                            <h3>丽王公司宗旨</h3>
+                            <p>“科技为动力，市场为导向”生产理念，“信誉第一，用户至上”经营理念，“持续创造客户价值”的服务理念，不断开拓创新，创世界品牌，铸百年丽王！</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="milestone">
+                <div class="col-md-6 col-xs-12"><img src="./images/history_img.png" alt="图片加载失败"></div>
+                <div class="col-md-6 col-xs-12 ">
+                    <div class="growUp">
+                        <div class="row">
+                            <div class="historyT"><img src="./images/title_history.png" alt="图片加载失败"></div>
+                            <div class=" con_history"><img src="./images/con_history.png" alt="图片加载失败"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="journalism">
+                <div class="col-md-6 col-xs-12">
+                    <div class="journalism-content">
+                        <ul>
+                            <li><img src="./images/title_news.png" alt="图片加载失败"></li>
+                            <li>
+                                <h3>剖析有机颜料用在印花中的方法</h3>
+                                <p>随着科技的进步，在印花的生产中，用的不再是一些随便的颜料，现在用的最多的就属有机颜料了，
+                                    在印花中用有机颜料，可以使印花看上去更加的美观，逼真。
+                                </p>
+                                <a href="javascript:;">了解更多>></a>
+                            </li>
+                            <li>
+                                <h3>剖析有机颜料用在印花中的方法</h3>
+                                <p>随着科技的进步，在印花的生产中，用的不再是一些随便的颜料，现在用的最多的就属有机颜料了，
+                                    在印花中用有机颜料，可以使印花看上去更加的美观，逼真。
+                                </p>
+                                <a href="javascript:;">了解更多>></a>
+                            </li>
+                            <li>
+                                <h3>剖析有机颜料用在印花中的方法</h3>
+                                <p>随着科技的进步，在印花的生产中，用的不再是一些随便的颜料，现在用的最多的就属有机颜料了，
+                                    在印花中用有机颜料，可以使印花看上去更加的美观，逼真。
+                                </p>
+                                <a href="javascript:;">了解更多>></a>
+                            </li>
+                            <li>
+                                <h3>剖析有机颜料用在印花中的方法</h3>
+                                <p>随着科技的进步，在印花的生产中，用的不再是一些随便的颜料，现在用的最多的就属有机颜料了，
+                                    在印花中用有机颜料，可以使印花看上去更加的美观，逼真。
+                                </p>
+                                <a href="javascript:;">了解更多>></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <img src="./images/history_img.png" alt="图片加载失败">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="row">
+                    <div class="col-md-2 col-sm-2 col-xs-2 col-md-offset-5 col-sm-offset-5 col-xs-offset-5 dreamSlogan">
+                        <img src="./images/title_honor.png" alt="图片加载失败">
+                    </div>
+                </div>
+                <div id="example" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <ul class="row item active">
+                            <li class="col-xs-2 one">
+                                <img src="images/1.png" srcset="images/1.png 1x,images/1.png 2x" class="img-responsive">
+                            </li>
+                            <li class="col-xs-2 two">
+                                <img src="images/1.png" srcset="images/1.png 1x,images/1.png 2x" class="img-responsive">
+                            </li>
+                            <li class="col-xs-2 three">
+                                <img src="images/1.png" srcset="images/1.png 1x,images/1.png 2x" class="img-responsive">
+                            </li>
+                            <li class="col-xs-2 four">
+                                <img src="images/1.png" srcset="images/1.png 1x,images/1.png 2x" class="img-responsive">
+                            </li>
+                            <li class="col-xs-2 five">
+                                <img src="images/1.png" srcset="images/1.png 1x,images/1.png 2x" class="img-responsive">
+                            </li>
+                        </ul>
+                        <ul class="row item">
+                            <li class="col-xs-2 six">
+                                <img src="images/1.png" srcset="images/1.png 1x,images/1.png 2x" class="img-responsive">
+                            </li>
+                            <li class="col-xs-2 seven">
+                                <img src="images/1.png" srcset="images/1.png 1x,images/1.png 2x" class="img-responsive">
+                            </li>
+                            <li class="col-xs-2 eight">
+                                <img src="images/1.png" srcset="images/1.png 1x,images/1.png 2x" class="img-responsive">
+                            </li>
+                            <li class="col-xs-2 nine">
+                                <img src="images/1.png" srcset="images/1.png 1x,images/1.png 2x" class="img-responsive">
+                            </li>
+                            <li class="col-xs-2 ten">
+                                <img src="images/1.png" srcset="images/1.png 1x,images/1.png 2x" class="img-responsive">
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="carousel-control left" href="#example" data-slide="prev">Previous</a>
+                    <a class="carousel-control right" href="#example" data-slide="next">Next</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 
 
 </body>

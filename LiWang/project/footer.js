@@ -1,13 +1,12 @@
 (function () {
     document.write(`<link rel="stylesheet" href="./style/footer.css">`)
 })();
-console.log(1);
 var _footer = `
     <footer>
     <div class="container">
         <div class="row">
             <div class="col-sm-2 col-md-2 col-lg-2 col-xs-2">
-                <div class="Lw-logo"><img src="/images/" alt="图片加载失败" ></div>
+                <div class="Lw-logo"><img src="./images/" alt="图片加载失败" ></div>
             </div>
             <div class="col-sm-2 col-md-2 col-lg-2 col-xs-2">
                 <h3>有机颜料</h3>
@@ -50,7 +49,63 @@ var _footer = `
     
 </div>
      </footer>`
+var _selfAdaption = `<div class="_selfAdaption">
+<div class="accordion" data-toggle="collapse" data-target="#content"><a href="javascript:;">荧光颜料</a><i>+</i></div>  
+<div class="collapse" id="content"> 
+    <ul>
+        <li>油墨用有机颜料</li>
+        <li>塑胶用有机颜料</li>
+        <li>涂料用有机颜料</li>
+    </ul>
+   </div>
+   <div class="accordion" data-toggle="collapse" data-target="#content-2"><a href="javascript:;">有机颜料</a><i>+</i></div>  
+<div class="collapse" id="content-2"> 
+    <ul>
+        <li>水性荧光颜料</li>
+        <li>塑胶荧光颜料</li>
+    </ul>
+   </div>
+   <div class="accordion" data-toggle="collapse" data-target="#content-3"><a href="javascript:;">水性色浆</a><i>+</i></div>  
+<div class="collapse" id="content-3"> 
+    <ul>
+        <li>8系列水性色浆</li>
+        <li>B系列水性色浆</li>
+        <li>F系列水性色浆</li>
+        <li>Q系列水性色浆</li>
+    </ul>
+   </div>
+   <div class="WeChat-mob">
+   <img src="./images/PC_wechart.png" alt="图片加载失败">
+</div>
+  <div class="friendship-mob">
+                    <p>友情链接：</p>
+                    <a href="javascriot:;">内置百叶遮阳</a>
+                    <a href="javascriot:;">工业杀菌剂</a>
+                    <a href="javascriot:;">石膏线</a>
+                    <a href="javascriot:;">彩瓦漆</a>
+                    <a href="javascriot:;">工业铝型材</a>
+                    <a href="javascriot:;">酒店四件套</a>
+    </div>
+</div>`
+
 
 $(function () {
-    $('body').append(_footer)
+    var _ht = $(window).width();
+    if(_ht < 970){
+        $('body').append(_selfAdaption)
+    }else{
+        $('body').append(_footer)
+    }
+    //点击加好变为减号
+    var _c = true
+    $('.accordion').click(function () {
+        _c = !_c;
+        if(_c){
+            $(this).find('i').html('+')
+        }else{
+            $(this).find('i').html('-')
+
+        }
+
+    })
 });
