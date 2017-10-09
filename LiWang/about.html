@@ -2,14 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>丽王网站</title>
     <link rel="stylesheet" href="./public/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style/Reset.css">
     <link rel="stylesheet" href="style/about.css" />
+	<link rel="stylesheet" href="./style/home.css">
+	<script src="./public/fontSize.js"></script>
     <script src="./public/jquery/dist/jquery.min.js"></script>
+	<script src="./public/bootstrap/dist/js/bootstrap.js"></script>
+	<script>
+		var _aboutHt = $(window).width();
+	</script>
+	<script src="./project/about.js"></script>
     <script src="./project/footer.js"></script>
 </head>
 <body>
+<nav class="navbar navbar-default" role="navigation">
+	<section class="container">
+		<div class="row">
+			<!--导航-->
+			<div class="container-fluid col-sm-12">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle NavBtn" data-toggle="collapse"
+							data-target="#example-navbar-collapse">
+						<!--<span class="sr-only">切换导航</span>-->
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Login图标</a>
+					<a href="javascript:;" class="navbar-brand-img navbar-toggle">En</a>
+					<a href="javascript:;" class="navbar-brand-img navbar-toggle MobileSearch"><img
+							src="./images/icon_research.png"
+							alt="图片加载失败"></a>
+				</div>
+				<div class="search"><input type="text" placeholder="请输入产品型号"><img
+						src="./images/icon_research.png" alt="图片加载失败"><i>En</i></div>
+				<div class="collapse navbar-collapse" id="example-navbar-collapse">
+					<ul class="nav navbar-nav navClick">
+						<li class="activeH"><a href="./home.html">首页</a></li>
+						<li><a href="#">产品中心</a></li>
+						<li class="dropdown">
+							<a href="./about.html">
+								关于丽王
+							</a>
+						</li>
+						<li><a href="#" class="dropdown-toggle" data-toggle="dropdown">丽王实例 <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">jmeter</a></li>
+								<li><a href="#">EJB</a></li>
+								<li><a href="#">Jasper Report</a></li>
+								<li class="divider"></li>
+								<li><a href="#">分离的链接</a></li>
+								<li class="divider"></li>
+								<li><a href="#">另一个分离的链接</a></li>
+							</ul>
+						</li>
+						<li><a href="#">企业动态</a></li>
+						<li><a href="#">联系我们</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="pull-down">
+		<div class="close-search"><span></span><span></span></div>
+		<div class="startSearch"><img src="./images/icon_research.png" alt="图片加载失败"><input type="text" placeholder="输入产品型号">
+			<p>点击进行搜索</p>
+		</div>
+	</div>
+</nav>
 	<div class="about-container">
 	 <div class="container">
         <div class="row">
@@ -30,29 +93,30 @@
                     <div><a href="javascript:;" class="connection">联系我们 ></a></div>
         		</div>
         	</div>
-        	<div class='col-sm-12 col-md-9 col-sm-offset-1 col-md-offset-1 about-container-right'>
-        		<div class="tittle">
-        			<p class="left">企业简介</p>
-        			<p class="right">您的位置:主页>企业简介</p>
-        		</div>
-        		<img src="images/KV/1.jpg"/>
-        		<div class="container">
-        			<header>企业简介</header>
-					<p>
-						丽王科技是一家致力于有机颜料、水性色浆的研发与生产的科技创新型企业，占地约40万平方米，产房近9万平方米。公司下设丽王化工（南通）有限公司，南通乐彩颜料化工有限公司，江苏丽王科技股份有限公司。
-					</p>
-					<p>
-						公司经过近20年的不懈努力，现成为国内最大的有机颜料及水性色浆生产商之一，并通过了ISO9001:2008认证及ISO14001:2004认证，荣获“国家高新技术企业”，“Intertek绿色环保认证”，“中国家纺面料印染色浆研发基地”，“中国著名品牌”的荣誉称号并通过了欧盟REACH认证。“彩豚”商标被评为“江苏省著名商标，“丽王”商标被评盐城市著名商标。
-					</p>
-					<p>
-						公司注重科技创新，现已形成红、黄、蓝、绿、橙、荧光系列有机颜料、环保系列有机颜料、水性色浆、印染助剂等产品，广泛应用于油墨、涂料、油漆、塑胶、印染、造纸等行业。产品畅销全国各地，并出口欧美等国家，深受国内外客户的青睐。
-
-					</p>
-					<p>
-						丽王科技始终秉承“科技为动力，市场为导向”的生产理念，“信誉第一，用户至上”的经营理念，“持续创造客户价值”的服务理念，不断开拓创新，创世界品牌，铸百年丽王！ 丽王科技为梦想添色彩！
-					</p>
-        		</div>
-        	</div>
+			<div class="intro">
+				<div class='col-sm-12 col-md-9 col-sm-offset-1 col-md-offset-1 about-container-right'>
+					<div class="tittle">
+						<p class="left">企业简介 <img src="images/1F6133389107D7F690B8AEB7E95C3731.png" style="height: 20px;width: 20px"/></p>
+						<p class="right">您的位置:主页>企业简介</p>
+					</div>
+					<img src="images/KV/1.jpg"/>
+					<div class="container">
+						<header>企业简介</header>
+						<p>
+							丽王科技是一家致力于有机颜料、水性色浆的研发与生产的科技创新型企业，占地约40万平方米，产房近9万平方米。公司下设丽王化工（南通）有限公司，南通乐彩颜料化工有限公司，江苏丽王科技股份有限公司。
+						</p>
+						<p>
+							公司经过近20年的不懈努力，现成为国内最大的有机颜料及水性色浆生产商之一，并通过了ISO9001:2008认证及ISO14001:2004认证，荣获“国家高新技术企业”，“Intertek绿色环保认证”，“中国家纺面料印染色浆研发基地”，“中国著名品牌”的荣誉称号并通过了欧盟REACH认证。“彩豚”商标被评为“江苏省著名商标，“丽王”商标被评盐城市著名商标。
+						</p>
+						<p>
+							公司注重科技创新，现已形成红、黄、蓝、绿、橙、荧光系列有机颜料、环保系列有机颜料、水性色浆、印染助剂等产品，广泛应用于油墨、涂料、油漆、塑胶、印染、造纸等行业。产品畅销全国各地，并出口欧美等国家，深受国内外客户的青睐。
+						</p>
+						<p>
+							丽王科技始终秉承“科技为动力，市场为导向”的生产理念，“信誉第一，用户至上”的经营理念，“持续创造客户价值”的服务理念，不断开拓创新，创世界品牌，铸百年丽王！ 丽王科技为梦想添色彩！
+						</p>
+					</div>
+				</div>
+			</div>
         </div>
 	 </div>
 	</div>
